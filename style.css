@@ -2,11 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+body{
+  background-color: #e3e3e3;
+  width: 375px;
+  align-self: center;
+}
+
+.container {
+  border: 3px solid #c46210;
+  width: 375px;
+  height: 100%;
+}
+
 .toolbar {
   display: flex;
   width: 375px;
   height: 48px;
-  background-color: #e3e3e3;
+  background-color: #ffffff;
   justify-content: space-between;
   margin: auto auto;
 }
@@ -15,7 +27,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 9px;
+  padding: 20px;
   cursor: pointer;
 }
 
@@ -26,7 +38,7 @@
   font-size: 18px;
   line-height: 16px;
   font-family: 'Roboto', sans-serif;
-  padding: 4px;
+  padding: 20px;
   cursor: pointer;
   font-weight: 800;
 }
@@ -35,7 +47,10 @@
   display: flex;
   width: 375px;
   height: 600px;
-  background-color: rgb(252, 252, 252);
+  background-color: #ffffff;
+  width: 375px;
+  height: 718px;
+  box-shadow:#172b4d;
   margin: auto auto;
 }
 
@@ -77,6 +92,21 @@
   list-style-type: none;
 }
 
+.paragraph-2 {
+  width: 117px;
+  height: 24px;
+  font-family: 'poppins' sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 10px;
+  color: #7f8cff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
 .social {
   padding: 10px;
   cursor: pointer;
@@ -93,22 +123,24 @@
 .main-content2 {
   display: flex;
   flex-direction: column;
-  width: 375px;
-  height: 600px;
+  width: 327px;
+  height: 552px;
   margin: auto auto;
   background-color: rgb(252, 252, 252);
   padding-top: 20px;
+  border: 1px solid #dfe1e6;
 }
 
 .snapshort1 {
   width: 295px;
   height: 220px;
-  flex-direction: column;
   border-radius: 8px;
   align-items: center;
+  margin: 0px 0px 18px 18px;
 }
 
-.tonic h3 {
+.tonic h2 {
+  margin: 0px 0px 20px 20px;
   width: 295px;
   height: 36px;
   font-family: 'poppins', sans-serif;
@@ -119,7 +151,7 @@
   color: #172b4d;
 }
 
-.canopy p {
+.canopy h6 {
   width: 55px;
   height: 16px;
   font-family: 'poppins', sans-serif;
@@ -128,12 +160,27 @@
   font-size: 13px;
   line-height: 16px;
   color: #344563;
-  display: flex;
-  flex-direction: row;
-  padding-right: 5px;
-  padding-bottom: 20px;
-  justify-content: space-between;
-  list-style: none;
+  margin: 20px;
+}
+
+h6 {
+  margin: 0px 0px 20px 20px;
+  color: #344563;
+}
+
+h6 span {
+  color: #344563;
+}
+
+.canopy span {
+  width: 88px;
+  height: 16px;
+  font-family: 'poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
 }
 
 .p {
@@ -145,11 +192,7 @@
   font-size: 15px;
   line-height: 24px;
   color: #344563;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  display: flex;
-  padding-top: 20px;
+  margin: 20px;
 }
 
 .input-text {
@@ -160,28 +203,31 @@
   letter-spacing: 0.3em;
 }
 
-.input-text .ipbox {
+.input-text {
   display: flex;
-  flex-direction: column;
+  margin-bottom: 30px;
 }
 
-.ipbox .html {
+ .html {
   width: 29px;
   height: 16px;
-  border-radius: 2px solid;
+  border-radius: none;
   font-family: 'poppins', sans-serif;
+  text-align: center;
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   letter-spacing: 0.3em;
   color: #6070ff;
+
 }
 
-.ipbox .css {
+.input-text .css {
   width: 21px;
   height: 16px;
-  border-radius: 2px solid;
+  border-radius: 20px solid;
   font-family: 'poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -191,10 +237,10 @@
   color: #6070ff;
 }
 
-.ipbox .jskript {
+.input-text .jskript {
   width: 65px;
   height: 16px;
-  border-radius: 2px solid;
+  border-radius: 20px solid;
   font-family: 'poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -202,4 +248,20 @@
   line-height: 24px;
   letter-spacing: 0.3em;
   color: #6070ff;
+}
+
+#faction {
+  margin-left: 20px;
+  border: none;
+  background-color: #e3e3e3;;
+  border-radius: 20px;
+  text-align: center;
+}
+
+::placeholder {
+  color: #6070ff;
+}
+
+.seepro{
+  padding: 15px;
 }
